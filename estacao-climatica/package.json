@@ -1,5 +1,5 @@
 {
-  "name": "primeiro-app",
+  "name": "estacao-climatica",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "primeiro-app": "file:",
+    "bootstrap": "^5.3.3",
+    "estacao-climatica": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
