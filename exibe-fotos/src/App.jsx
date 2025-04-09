@@ -1,14 +1,29 @@
 // rafce
-import React from 'react'
+import React from "react";
+import Busca from "./components/Busca";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Exibe uma lista de...</h1>
-      <i className="pi pi-search"></i>
-      <i className="pi pi-linkedin"></i>
-    </div>
-  )
-}
+class App extends React.Component {
 
-export default App
+  onBuscaRealizada = (termo) => {
+    console.log(termo);
+    // fazer a busca na API e atualizar o estado
+  }
+
+  render(){
+    return (
+      <div className="grid justify-content-center">
+        <div className="col-12">
+          <h1>Exibir uma lista de...</h1>
+        </div>
+        <div className="col-12">
+          <Busca dica="Buscar imagens de..." 
+          onBuscaRealizada={this.onBuscaRealizada}/>
+        </div>
+      </div>
+    );
+  }
+
+
+};
+
+export default App;
